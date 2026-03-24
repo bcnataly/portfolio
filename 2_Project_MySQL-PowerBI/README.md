@@ -19,7 +19,7 @@ The project utilized MySQL for data preparation, exploration, cleaning, transfor
 
 | File Name               | Description                                                  |
 |------------------------|---------------------------------------------------------------|
-| `employees.csv`        | Raw dataset containing employee data              |
+| [employees.csv](https://github.com/bcnataly/portfolio/blob/main/2_Project_MySQL-PowerBI/employees.csv)| Raw dataset containing employee data|
 | `script.sql`           | SQL script used for data exploring, cleaning, transformation, and queries|
 | `clean_employees.csv`  | Cleaned dataset after applying SQL transformations            |
 | `dashboard.pbix`       | Power BI dashboard visualizing key employee metrics           |
