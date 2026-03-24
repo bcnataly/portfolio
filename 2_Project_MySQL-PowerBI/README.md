@@ -20,10 +20,10 @@ The project utilized MySQL for data preparation, exploration, cleaning, transfor
 | File Name               | Description                                                  |
 |------------------------|---------------------------------------------------------------|
 | [employees.csv](https://github.com/bcnataly/portfolio/blob/main/2_Project_MySQL-PowerBI/employees.csv)| Raw dataset containing employee data|
-| `script.sql`           | SQL script used for data exploring, cleaning, transformation, and queries|
-| `clean_employees.csv`  | Cleaned dataset after applying SQL transformations            |
-| `dashboard.pbix`       | Power BI dashboard visualizing key employee metrics           |
-| `dashboard.pdf`        | Exported version of the dashboard                             |
+| [script.sql](https://github.com/bcnataly/portfolio/blob/main/2_Project_MySQL-PowerBI/script.sql)| SQL script used for data exploring, cleaning, transformation, and queries|
+| [clean_employees.csv](https://github.com/bcnataly/portfolio/blob/main/2_Project_MySQL-PowerBI/clean_employees.csv)  | Cleaned dataset after applying SQL transformations|
+| [dashboard.pbix](https://github.com/bcnataly/portfolio/blob/main/2_Project_MySQL-PowerBI/dashboard.pbix)| Power BI dashboard visualizing key employee metrics|
+| [dashboard.pdf](https://github.com/bcnataly/portfolio/blob/main/2_Project_MySQL-PowerBI/dashboard.pdf)| Exported version of the dashboard|
 
 ## 🧭 Project Workflow
 
