@@ -8,15 +8,19 @@ Microsoft Excel was used for data exploring, cleaning, transformation, and visua
 
 ## 🛠️ Tools & Technologies
 
-- **Microsoft Excel** – Data exploration, cleaning, transformation, analysis, and visualization. 
+- **Microsoft Excel** – Data exploration, cleaning, transformation, analysis, and visualization:
+  - Aggregation, Conditional, Logical, String, Date, Lookup and Reference functions
+  - Conditional formatting
+  - Functions
+  - Pivot Tables
 - **GitHub** – Version control and public repository hosting.  
 
 ## 📁 Included Files
 
 | File Name       | Worksheet                                                       |Description                                                  
 |-----------------|-----------------------------------------------------------------|-----------------------------------------------------|
-| Project.xlsx    | 01_Raw_data<br>02_Clean_data<br>03_Analysis<br>04_Pivot_tables<br>05_Dashboard | EuroTech Essentials raw dataset<br>Cleaned and transformed dataset<br>Analysis performed using Excel formulas and conditional formatting<br>Pivot tables used to generate the dashboard's dynamic charts<br>Financial Excel dashboard focuses on profits|
-| Dashboard.pdf   | NA                                                               | Exported version of the dashboard                  |
+| [Project.xlsx](https://github.com/bcnataly/portfolio/blob/main/3_Project_Excel/Project.xlsx)| 01_Raw_data<br>02_Clean_data<br>03_Analysis<br>04_Pivot_tables<br>05_Dashboard | EuroTech Essentials raw dataset<br>Cleaned and transformed dataset<br>Analysis performed using Excel formulas and conditional formatting<br>Pivot tables used to generate the dashboard's dynamic charts<br>Financial Excel dashboard focuses on profits|
+| [Dashboard.pdf](https://github.com/bcnataly/portfolio/blob/main/3_Project_Excel/Dashboard.pdf)| NA       | Exported version of the dashboard                 |
 
 ## 🧭 Project Workflow
 
