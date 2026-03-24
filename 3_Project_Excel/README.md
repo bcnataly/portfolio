@@ -9,9 +9,8 @@ Microsoft Excel was used for data exploring, cleaning, transformation, and visua
 ## 🛠️ Tools & Technologies
 
 - **Microsoft Excel** – Data exploration, cleaning, transformation, analysis, and visualization:
-  - Aggregation, Conditional, Logical, String, Date, Lookup and Reference functions
+  - Aggregation, Conditional, Logical, String, Date, Arithmetic, Lookup and Reference Functions
   - Conditional formatting
-  - Functions
   - Pivot Tables
 - **GitHub** – Version control and public repository hosting.  
 
