@@ -16,10 +16,11 @@ What is the profile of customers with the greatest potential for conversion rate
 
 ## 📁 Included Files
 
-| File Name               | Description                                                  |
+| File Link               | Description                                                  |
 |------------------------|---------------------------------------------------------------|
-| `dataset.csv`        | Raw dataset containing information on potential customers for the bank. |
-| `notebook.ipynb`  | A Jupyter notebook containing the full exploratory data analysis (EDA) workflow.|
+|[notebook.ipynb](https://github.com/bcnataly/portfolio/blob/main/1_Project_Python/notebook.ipynb)  | A Jupyter notebook containing the full exploratory data analysis (EDA) workflow|
+|[dataset.csv](https://github.com/bcnataly/portfolio/blob/main/1_Project_Python/dataset.csv)| Raw dataset containing information on potential customers for the bank|
+
 
 ## 🧭 Project Workflow
 
