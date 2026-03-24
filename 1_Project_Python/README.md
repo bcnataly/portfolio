@@ -8,10 +8,10 @@ What is the profile of customers with the greatest potential for conversion rate
 
 ## 🛠️ Tools & Technologies
 
-- **Google Colaboratory** – A cloud-based environment for running Python code without local setup.
+- **Google Colaboratory** – Cloud-based environment for running Python code without local setup.
 - **Python 3.9+** – Core programming language for data analysis.
-- **Pandas** – Data manipulation and cleaning Python library.
-- **Matplotlib and Seaborn** – Data visualization Python libraries.
+  - **Pandas** – Data manipulation and cleaning Python library.
+  - **Matplotlib and Seaborn** – Data visualization Python libraries.
 - **GitHub** – Version control and public repository hosting.
 
 ## 📁 Included Files
