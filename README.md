@@ -1,6 +1,6 @@
 # 💻 Data Analyst Portfolio
 
-Welcome! I'm Nataly Beltrán Cuenca, a passionate and detail-oriented data analyst. I created this repository to showcase projects that demonstrate my technical skills in data exploration, cleaning, transformation, analysis, and visualization. I use tools and technologies such as Python, SQL, Power BI, Excel and Tableau.
+Welcome! I'm Nataly Beltrán Cuenca, a data analyst with strong numerical analysis and logical thinking skills. I created this repository to showcase projects that demonstrate my technical skills in data exploration, cleaning, transformation, analysis, and visualization. I use tools and technologies such as Python, SQL, Power BI, Excel and Tableau.
 
 ## 📁 Projects
 
@@ -47,7 +47,7 @@ Welcome! I'm Nataly Beltrán Cuenca, a passionate and detail-oriented data analy
 
 ## 📬 Contact
 
-- **Linkedin:** www.linkedin.com/in/nataly-beltran-cuenca-7bb38a303
+- **Linkedin:** www.linkedin.com/in/nataly-beltran-cuenca-data-analytics/
 - **GitHub:** bcnataly
 
 
