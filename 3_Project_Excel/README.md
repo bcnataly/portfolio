@@ -131,11 +131,6 @@ The dashboard uses visual elements to present key insights about EuroTech Essent
     - Although Mark Preston is the lowest-performing sales agent overall, he contributes the most to Apple's profits. This emphasizes the importance of segmenting sales agents by brand or product specialization rather than evaluating performance solely based on total contribution.
     - Samsung and Motorola's dominance in overall profit (51.6%) suggests that a strategic focus on these brands could yield higher returns. However, balancing product diversity and agent specialization is still essential for sustainable growth.
 
-## 🔮 Next Steps
-
-- Integrate Power Query for automated data cleaning
-Replace manual preprocessing with Power Query to streamline updates.
-
 ## 🚀 Execution Guide 
 
 To explore this project in full:
