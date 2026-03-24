@@ -88,8 +88,6 @@ The dashboard uses visual elements to present key insights about the Techniserv 
 | Table                 | Top 6 Employees Annual Salary| Lists the six highest-paid employees, including information such as gender, department, and work modality|
 | Vertical Bar Chart    |Avg. Annual Salary by Gender<br>Top 3 Avg. Annual Salary by Department| Displays average salary by gender<br> Displays the three departments with the highest average salaries|
 
- ![Dashboard](https://github.com/bcnataly/portfolio/blob/main/2_Project_MySQL-PowerBI/dashboard.pdf)
-
 ## 🧠 Key Insights
 
 The figures are in U.S. format.
