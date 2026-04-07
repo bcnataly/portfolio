@@ -47,7 +47,7 @@ Welcome! I'm Nataly Beltrán Cuenca, a data analyst with strong numerical analys
 
 ## 📬 Contact
 
-- **Linkedin:** www.linkedin.com/in/nataly-beltran-cuenca-data-analytics/
+- **Linkedin:** www.linkedin.com/in/natalybc
 - **GitHub:** bcnataly
 
 
