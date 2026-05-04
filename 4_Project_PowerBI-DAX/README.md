@@ -2,14 +2,14 @@
 
 ## 📌 Project Overview
 
-Perú CarHub, a car dealership based in Peru, requires a visual report to track its sales. This project uses an interactive dashboard to highlight the key drivers of sales performance and the least contributing factors. The project will use Power BI to leverage data aggregations and advanced DAX functions to deliver actionable insights.
+Perú CarHub, a car dealership based in Peru, requires two visual reports to monitor sales and customer activity. This project leverages two interactive dashboards: one highlighting the key drivers of sales performance and areas with lower impact, and another showcasing customer purchasing behavior. By utilizing Power BI’s data modeling, aggregation, and advanced DAX functions, the project delivers actionable insights to support strategic decision‑making.
 
 ## 🛠️ Tools & Technologies
 - **Power BI Desktop**
   - **Power Query** –  Data preparation and transformation 
   - **Model View** – Management of relationships and data model structure.
-  - **DAX (Data Analysis Expressions)** – Creation of measures, calculated columns, advanced calculations and analysis.
-  - **Report View** – Design of interactive dashboard and KPI visualization.
+  - **DAX (Data Analysis Expressions)** – Creation of advanced measures and calculated columns for analysis.
+  - **Report View** – Design of interactive dashboards and KPI visualization.
 - **GitHub** – Version control and public repository hosting.
 
 ## 📁Included Files
@@ -17,20 +17,23 @@ Perú CarHub, a car dealership based in Peru, requires a visual report to track 
 | File Name                 | Description                                                                |
 |---------------------------|----------------------------------------------------------------------------|
 | `ventas.xlsx`             | Clean dataset containing  Perú CarHub  data                                |
-| `analisis_de_ventas.pbix` | It includes the data model, DAX analysis, and the sales tracking dashboard |
-| `dashboard_and_tables.pdf`| Exported version of the dashboard and tables containing calculated measures|
+| `analisis_de_ventas.pbix` | It includes the data model and DAX analysis, as well as the sales and customer monitoring dashboards|
+| `dashboard_and_tables.pdf`| Exported version of the dashboards|
 | `modelo_de_datos.pdf `    | Star data model diagram                                                    |
 
 ## 🧭 Project Workflow
 
-The **analisis_comercial.pbix** file contains the process of data preparation and exploration, transformation, analysis and visualization.
+The **analisis_comercial.pbix** file contains the process of data preparation, exploration, transformation, analysis and visualization.
 
 ### 🔍 Data Preparation and Exploration
 - Load the data model from the "ventas.xlsx" file and the following tables: "fact_ventas," "fact_presupuestos," "dim_canal," "dim_cliente," "dim_sede," "dim_vehiculo," "dim_vendedor," and "foto_vehiculos".
 -	Review each table in the model to understand the information contained in each one.
--	Check the data types.
--	Explore the star schema data model.
+-	Check the data types and assign the correct ones.
+-	Combine the period and month columns from the fact_presupuesto table and generate the column fecha_presupuesto, with date format.
+-	Change the format of the "nombre_sede" column in the "dim_sede" table to "Capitalize Each Word".
+-	Explore the star schema data model and define the relationships and cardinality between fact and dimension tables.
 
+  
 ### 🔄 Data Transformation
 -	Create the calculated table dim_fechas, which contains a calendar with dates from 01/01/2015 to 12/31/2017, using date data type and short date format.
 -	Create Calculated Columns – *dim_fechas*
@@ -45,9 +48,7 @@ The **analisis_comercial.pbix** file contains the process of data preparation an
 | `Día`           | FORMAT(Dim_Fechas[Date],"dddd")               | Displays the full day name         |
 | `DateKey`       | VALUE(FORMAT(dim_fechas[Date],"yyyymmdd"))    | Creates a numeric key for the date |
 
-
-- Combine the period and month columns from the fact_presupuesto table using Power Query and generate the column fecha_presupuesto, with date format.
--	Manage the relationships of the star schema data model in Model View option. See the document modelo_de_datos.pdf.
+-	Manage the relationships of the star schema data model by establishing the relationships and cardinality between the "dim_fechas" and "fact_ventas" and "fact_presupuesto" tables.
 
 ### 📈 Analysis
 Repository of calculated measures created using DAX:
@@ -57,20 +58,17 @@ Repository of calculated measures created using DAX:
 | `Total de Ventas`           | SUM(fact_ventas[Precio Venta sin IGV])                         | Calculates the total sales amount                           |
 | `Cantidad Clientes`         | DISTINCTCOUNT(fact_ventas[Cliente])                            | Counts the number of unique clients                         |
 | `Cumplimiento`              | DIVIDE([Total de Ventas],[Total Presupuesto])     | Measures the percentage of sales achievement against the budget           |
-| `Variación Interanual`      |VAR VentasLY = CALCULATE([Total de Ventas], DATEADD(Dim_Fechas[Date],-1,YEAR)) RETURN DIVIDE([Total de Ventas]-VentasLY, VentasLY,0) |Year-over-year variation in sales|
-| `Venta del Trimestre del Año Anterior`|CALCULATE([Total de Ventas], PARALLELPERIOD(Dim_Fechas[Date],-4,QUARTER))| Sales of the same quarter in the previous year|
-| `Crecimiento Trimestral` |[Total de Ventas]- [Venta del Trimestre del Año Anterior]| Quarterly growth compared to the same quarter of the previous year|
-| `Ranking de Ventas por Modelo`|RANKX(ALL(dim_vehiculo[modelo_vehiculo]), [Total de Ventas])|Assigns a ranking to each vehicle model based on total sales|
-| `Venta Acumulada de Modelos`|SUMX(TOPN([Ranking de Ventas por Modelo], ALL(dim_vehiculo[modelo_vehiculo]),[Total de Ventas]),[Total de Ventas])|Calculates the cumulative sales of vehicle models based on their sales ranking|
-| `Total de Ventas Modelo`    |CALCULATE([Total de Ventas], ALL(dim_vehiculo[modelo_vehiculo]))| Calculates the total sales by vehicle model, ignoring filters applied to the modelo_vehiculo column|
-| `% Pareto`|DIVIDE([Venta Acumulada de Modelos], [Total de Ventas Modelo])|Calculates the cumulative percentage of sales by model, applying the Pareto principle (80/20)|
+| `YoY`      |VAR VentasLY = CALCULATE([Total de Ventas], DATEADD(Dim_Fechas[Date],-1,YEAR)) RETURN DIVIDE([Total de Ventas]-VentasLY, VentasLY,0) |Year-over-year variation in sales|
+| `Venta del Mes Anterior`| CALCULATE([Total de Ventas],PARALLELPERIOD(Dim_Fechas[Date],-1,MONTH))| Sales of the same month in the previous year|
+| `Crecimiento Mensual` |[Total de Ventas]- [Venta del Mes Anterior]| monthly growth compared to the same month of the previous year|
+
 
 ### 📊 Data Visualization
 
 | Chart Type            | Title                                                               | Description                                                     |
 |-----------------------|---------------------------------------------------------------------|-----------------------------------------------------------------|
 | Card                  | Total de Ventas<br>Clientes<br>Cumplimiento<br>Variación Interanual |Displays the total sales amount<br>Displays the number of clients<br>Displays the percentage of sales achievement against the budget<br>Displays the year-over-year variation in sales|
-| Clustered column chart| Comparativa de Ventas por Trimestre|Displays current quarter sales, sales of the same quarter in the previous year, and quarterly growth|
+| Clustered column chart| Comparativa de Ventas por Mes|Displays current month sales, sales of the same month in the previous year, and monthly growth|
 | Pie Chart             | Ventas por Segmento                                                 | Displays the proportion of sales by segment                     |
 | Vertical Bar Chart    | Ventas por Sede                                                     | Displays sales by location                                      |
 | Stacked column chart  |Ventas por modelo de vehículo y % de pareto                          | Displays the sales of vehicle models and Pareto %               |
