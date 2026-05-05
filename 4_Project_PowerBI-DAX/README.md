@@ -69,9 +69,10 @@ Repository of calculated measures created using DAX:
 |-----------------------|---------------------------------------------------------------------|-----------------------------------------------------------------|
 | Card                  | Total de Ventas<br>Clientes<br>Cumplimiento<br>Variación Interanual |Displays the total sales amount<br>Displays the number of clients<br>Displays the percentage of sales achievement against the budget<br>Displays the year-over-year variation in sales|
 | Clustered column chart| Comparativa de Ventas por Mes|Displays current month sales, sales of the same month in the previous year, and monthly growth|
-| Pie Chart             | Ventas por Segmento                                                 | Displays the proportion of sales by segment                     |
-| Vertical Bar Chart    | Ventas por Sede                                                     | Displays sales by location                                      |
-| Stacked column chart  |Ventas por modelo de vehículo y % de pareto                          | Displays the sales of vehicle models and Pareto %               |
+| Stacked bar chart  |Top 5 Ventas por Modelo de vehículo                        | Displays the five vehicle models that generated the most sales|
+| Stacked column chart  |Ventas por Marca de Vehículo                       | Displays how sales are distributed by vehicle brand in each quarter|
+| Pie Chart             | Ventas por Segmento                                               | Displays the proportion of sales by type of cliente|
+| Map Chart    | Ventas por Sede                                                     | Displays sales by location                                |
 
 
 ## 🧠 Key Insights 
@@ -79,7 +80,7 @@ Repository of calculated measures created using DAX:
   - 87% of clients are individuals, while 13% are companies.
   - The top-performing branch is Santiago de Surco, which leads in total sales volume. The branch with the lowest performance is La Molina.
   - Toyota and Suzuki are the best-selling brands, indicating strong customer preference. Mazda is the least-selling brand.
-  - Contrary to the classic Pareto principle, where 20% of products generate 80% of results, 80% of vehicle sales at Peru CarHub come from 71.42% of the available models. This reflects more balanced and diversified demand, suggesting that customers appreciate having a wide range of choices.
+
 
 ## 🚀 Execution Guide 
 
