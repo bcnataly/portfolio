@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-Perú CarHub, a car dealership based in Peru, requires two visual reports to monitor sales and customer activity. This project leverages two interactive dashboards: one highlighting the key drivers of sales performance and areas with lower impact, and another showcasing customer purchasing behavior. By utilizing Power BI’s data modeling, aggregation, and advanced DAX functions, the project delivers actionable insights to support strategic decision‑making.
+Peru CarHub, a car dealership based in Peru, required a visual report to gain insight into its sales activity. For this project, I developed an interactive dashboard highlighting the main drivers of sales performance and the areas with the least impact. The project uses data modelling and advanced DAX functions to provide actionable insights and support strategic decision-making.
 
 ## 🛠️ Tools & Technologies
 - **Power BI Desktop**
@@ -17,15 +17,15 @@ Perú CarHub, a car dealership based in Peru, requires two visual reports to mon
 | File Name                 | Description                                                                |
 |---------------------------|----------------------------------------------------------------------------|
 | `ventas.xlsx`             | Clean dataset containing  Perú CarHub  data                                |
-| `analisis_de_ventas.pbix` | It includes the data model and DAX analysis, as well as the sales and customer monitoring dashboards|
-| `dashboard_and_tables.pdf`| Exported version of the dashboards|
+| `analisis_de_ventas.pbix` | It includes the data model and DAX analysis, as well as the sales dashboards|
+| `dashboard_and_tables.pdf`| Exported version of the dashboard|
 | `modelo_de_datos.pdf `    | Star data model diagram                                                    |
 
 ## 🧭 Project Workflow
 
-The **analisis_comercial.pbix** file contains the process of data preparation, exploration, transformation, analysis and visualization.
+The **analisis_de_ventas.pbix** file contains the process of data preparation, exploration, transformation, analysis and visualization.
 
-### 🔍 Data Preparation and Exploration
+### 🔍 Data Exploration and Preparation  
 - Load the data model from the "ventas.xlsx" file and the following tables: "fact_ventas," "fact_presupuestos," "dim_canal," "dim_cliente," "dim_sede," "dim_vehiculo," "dim_vendedor," and "foto_vehiculos".
 -	Review each table in the model to understand the information contained in each one.
 -	Check the data types and assign the correct ones.
@@ -64,22 +64,31 @@ Repository of calculated measures created using DAX:
 
 
 ### 📊 Data Visualization
-
-| Chart Type            | Title                                                               | Description                                                     |
-|-----------------------|---------------------------------------------------------------------|-----------------------------------------------------------------|
-| Card                  | Total de Ventas<br>Clientes<br>Cumplimiento<br>Variación Interanual |Displays the total sales amount<br>Displays the number of clients<br>Displays the percentage of sales achievement against the budget<br>Displays the year-over-year variation in sales|
+- **Sales Dashboard**
+| Chart Type            | Title                                                               | Description                                              |
+|-----------------------|---------------------------------------------------------------------|----------------------------------------------------------|
+| Card                  | Total de Ventas<br>Cumplimiento<br>YoY |Displays the total sales amount<br>Displays the percentage of sales achievement against the budget<br>Displays the year-over-year variation in sales|
 | Clustered column chart| Comparativa de Ventas por Mes|Displays current month sales, sales of the same month in the previous year, and monthly growth|
 | Stacked bar chart  |Top 5 Ventas por Modelo de vehículo                        | Displays the five vehicle models that generated the most sales|
 | Stacked column chart  |Ventas por Marca de Vehículo                       | Displays how sales are distributed by vehicle brand in each quarter|
-| Pie Chart             | Ventas por Segmento                                               | Displays the proportion of sales by type of cliente|
-| Map Chart    | Ventas por Sede                                                     | Displays sales by location                                |
-
+| Pie Chart             | Ventas por Segmento                                               | Displays the proportion of sales by customer type|
+| Map Chart             | Ventas por Sede                                                     | Displays sales by location             |                             
 
 ## 🧠 Key Insights 
 
-  - 87% of clients are individuals, while 13% are companies.
-  - The top-performing branch is Santiago de Surco, which leads in total sales volume. The branch with the lowest performance is La Molina.
-  - Toyota and Suzuki are the best-selling brands, indicating strong customer preference. Mazda is the least-selling brand.
+ 
+  - The Top-performing vehicle models by sales are: Genesis (Hyundai), XL7 (Suzuki), Elantra (Hyundai), Santa Fe (Hyundai) and 251–650 (Suzuki). The top 5 models together account for 17 % of total sales, highlighting the importance of a few key products.
+  - Toyota and Suzuki are the best-selling brands, indicating strong customer preference, while Mazda is the least-selling brand.
+  - Toyota leads the way in overall sales thanks to its diverse range of models, even though none of them feature in the top five best-sellers.
+  - 87.01 % of sales come from individual customers, while only 12.99% come from corporate customers.
+  - Santiago de Surco is the best-performing branch, leading in total sales volume with 58.36%. Sales at the other three branches — Ate (16.75%), San Miguel (16.65%) and La Molina (8.24%) — do not exceed Santiago de Surco's.
+
+- **Strategic Interpretation:**
+
+- Design promotional strategies that are specific to the vehicle models with the highest sales performance.
+- Highlight Toyota's diversity strategy and analyze which models support it to optimize inventory.
+- Focus marketing campaigns and promotions on individual customers, as they represent the majority of the market.
+- Evaluate strategies to improve sales performance at the La Molina branch.
 
 
 ## 🚀 Execution Guide 
@@ -87,7 +96,7 @@ Repository of calculated measures created using DAX:
 To explore this project in full:
 - Open the analisis_de_ventas.pbix Power BI file.
 - Navigate through each view:
-    - Report view: Displays the dashboard on one page and two tables on the other page. The tables display some of the calculated measures.
+    - Report view: Displays the dashboard.
     - Table view: Displays the tables that make up the star schema data model.
     - Model view: Star schema data model.
 
