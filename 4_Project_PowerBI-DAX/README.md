@@ -64,7 +64,7 @@ Repository of calculated measures created using DAX:
 
 
 ### 📊 Data Visualization
-- **Sales Dashboard**
+
 | Chart Type            | Title                                                               | Description                                              |
 |-----------------------|---------------------------------------------------------------------|----------------------------------------------------------|
 | Card                  | Total de Ventas<br>Cumplimiento<br>YoY |Displays the total sales amount<br>Displays the percentage of sales achievement against the budget<br>Displays the year-over-year variation in sales|
@@ -75,7 +75,6 @@ Repository of calculated measures created using DAX:
 | Map Chart             | Ventas por Sede                                                     | Displays sales by location             |                             
 
 ## 🧠 Key Insights 
-
  
   - The Top-performing vehicle models by sales are: Genesis (Hyundai), XL7 (Suzuki), Elantra (Hyundai), Santa Fe (Hyundai) and 251–650 (Suzuki). The top 5 models together account for 17 % of total sales, highlighting the importance of a few key products.
   - Toyota and Suzuki are the best-selling brands, indicating strong customer preference, while Mazda is the least-selling brand.
