@@ -1,4 +1,4 @@
-# Sales Data Analysis – Power BI - DAX
+# Sales Data Analysis – Power BI 
 
 ## 📌 Project Overview
 
@@ -65,6 +65,8 @@ Repository of calculated measures created using DAX:
 
 ### 📊 Data Visualization
 
+- **Filters**This dashboard includes filters by year and month, vehicle brand, and location.
+
 | Chart Type            | Title                                                               | Description                                              |
 |-----------------------|---------------------------------------------------------------------|----------------------------------------------------------|
 | Card                  | Total de Ventas<br>Cumplimiento<br>YoY |Displays the total sales amount<br>Displays the percentage of sales achievement against the budget<br>Displays the year-over-year variation in sales|
@@ -80,7 +82,7 @@ Repository of calculated measures created using DAX:
   - Toyota and Suzuki are the best-selling brands, indicating strong customer preference, while Mazda is the least-selling brand.
   - Toyota leads the way in overall sales thanks to its diverse range of models, even though none of them feature in the top five best-sellers.
   - 87.01 % of sales come from individual customers, while only 12.99% come from corporate customers.
-  - Santiago de Surco is the best-performing branch, leading in total sales volume with 58.36%. Sales at the other three branches — Ate (16.75%), San Miguel (16.65%) and La Molina (8.24%) — do not exceed Santiago de Surco's.
+  - Santiago de Surco is the best-performing branch, leading in total sales volume with 58.36%. Sales at the other three branches — Ate (16.75%), San Miguel (16.65%) and La Molina (8.24%) — don't exceed Santiago de Surco's.
 
 - **Strategic Interpretation:**
 
